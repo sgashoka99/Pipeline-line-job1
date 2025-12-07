@@ -1,5 +1,8 @@
 pipeline {
-  agent any;
+  agent {
+  label 'rhel-linux-build'
+  }
+
   stages {
     
     stage ('BUILD') {
